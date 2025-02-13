@@ -1,0 +1,47 @@
+{
+  "name": "interplanetary-drill",
+  "description": "With the help of gypsy magic, he drills iron on other planets.",
+  "type": "GenericCrafter",
+  "size": 5,
+  "health": 500,
+  "category": "production",
+  "buildCostMultiplier": 1.0,
+  "craftTime": 60,
+  "explodeEffect": "impactReactorExplosion",
+  "explodeSound": "explosionbig",
+  "consumes": {
+    "power": 10.0,
+    "items": [
+      { "item": "titanium", "amount": 50 },
+      { "item": "silicon", "amount": 10 },
+    ]
+  },
+  "outputItem": {
+    "item": "ironorewithimpurities",
+    "amount": 5
+  },
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": false,
+  "requirements": [
+    { "item": "titanium", "amount": 500 },
+    { "item": "plastanium", "amount": 300 },
+    { "item": "thorium", "amount": 200 }
+  ],
+  "drawer": {
+      "type": "DrawMulti",
+      "drawers": [
+        {
+        "type": "drawRegion",
+        "suffix": "-bottom"    
+        },  
+        {
+        "type": "DrawPlasma"
+        },
+        {
+        "type": "DrawDefault"
+        },
+      ]
+    },
+  "itemCapacity": 100
+}

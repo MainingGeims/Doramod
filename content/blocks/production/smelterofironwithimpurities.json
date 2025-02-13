@@ -1,0 +1,55 @@
+{
+	"type": "GenericCrafter",
+	"name": "smelter of iron with impurities",
+	"size": 3,
+	"health": 285,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": false,
+	"craftTime": 30,
+	"updateEffect": {
+		"type": "multiEffect", 
+		"effects": [
+		{"type": "lava"
+		 "colorFrom": "d8b66f",
+		 "colorTo": "ffd780"}
+		]
+		}
+	"consumes": {
+    "power": 1.9,
+    "items": {
+      "items": [
+        "ironorewithimpurities/6"
+      ],
+    },
+	},
+	"requirements": [
+    {
+      "item": "copper",
+      "amount": 460
+    },
+    {
+      "item": "lead",
+      "amount": 320
+    },
+    {
+      "item": "titanium",
+      "amount": 145
+    }
+  ],
+	"category": "crafting",
+	"outputLiquid": "slag/0.1",
+	"outputItem": "ironingot/3.5",
+    "drawer": {
+      "type": "DrawMulti",
+      "drawers": [
+        {
+        "type": "drawRegion",
+        "suffix": "-bottom"    
+        },  
+        {
+        "type": "DrawDefault"
+        },
+      ]
+    },
+}
