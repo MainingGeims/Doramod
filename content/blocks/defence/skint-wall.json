@@ -1,0 +1,19 @@
+{
+  "type": "mendProjector",
+  "name": "skint-wall",
+  "size": 1,
+  "health": 2500,
+  "category": "defense",
+  "reload": 30,
+  "healPercent": 10,
+  "hasPower": true,
+  "range": 10,  // Радиус ремонта
+  "consumes": {
+    "power": 2,  // Потребление энерги
+	}
+  "repairSpeed": 5,  // Скорость восстановления здоровья построек
+  "requirements": [
+    { "item": "lead", "amount": 50 },
+    { "item": "silicon", "amount": 30 }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+	"name": "openok",
+	"description": "просто грибочек",
+	"type": "Wall",
+	"buildCostMultiplier": 0.45,
+	"health": 1,
+	"size": 3,
+	"requirements": [
+        "copper/1",
+	],
+	"category": "defense",
+	"research": "constructor"
+}

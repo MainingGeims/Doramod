@@ -1,0 +1,124 @@
+  name: dora-weapon,
+  type: ItemTurret,
+  category: turret,
+  size: 4,
+  health: 4200,
+  requirements: [
+		silicon/60000,
+        copper/70000,
+        graphite/40000,
+		titanium/90000,
+		phase-fabric/50000,
+		plastanium/100000,
+		surge-alloy/80000,
+		coal/55000,
+		lead/100000
+	],
+  range: 600,
+  reload: 150,
+  recoil: 3,
+  shake: 5,
+  inaccuracy: 1,
+  ammoTypes: {
+    graphite: {
+      type: ArtilleryBulletType,
+      damage: 240,
+      speed: 4,
+      lifetime: 150,
+      splashDamage: 180,
+      splashDamageRadius: 50,
+      width: 20,
+      height: 20,
+      backColor: 4a5c6e,
+      frontColor: bcd7e8,
+      trailColor: 6ea6ff,
+      trailLength: 15,
+      trailWidth: 3,
+      hitEffect: {
+        type: MultiEffect,
+        effects: [
+                    {
+            "type": "ParticleEffect",
+            "lightOpacity": 0,
+            "particles": 10,
+            "length": 30,
+            "lifetime": 50,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "colorFrom": "fe7606",
+            "colorTo": "b35a1e"
+          },
+		  {
+			  "type": "WaveEffect",
+			  "sizeFrom": 0,
+			  "sizeTo": 120,
+			  "strokeFrom": 50,
+              "strokeTo": 0,
+			  "lifetime": 15,
+			  "colorFrom": "d8b66f",
+			  "colorTo": "ffd780"
+		  },
+          {
+            "type": "ParticleEffect",
+            "lightOpacity": 0,
+            "particles": 10,
+            "length": 20,
+            "lifetime": 40,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "colorFrom": "fe7606",
+            "colorTo": "b35a1e"
+          },
+          {
+            "type": "ParticleEffect",
+            "lightOpacity": 0,
+            "particles": 5,
+            "length": 20,
+            "lifetime": 30,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "sizeFrom": 2.5,
+            "sizeTo": 0,
+            "colorFrom": "ffffff",
+            "colorTo": "b35a1e"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 1,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "length": 0,
+            "interp": "swingIn",
+            "lifetime": 25,
+            "colorFrom": "fe7606",
+            "colorTo": "b35a1e"
+           }
+        ]
+      },
+      despawnEffect: {
+        type: ExplosionEffect,
+        lifetime: 60,
+        waveColor: 6ea6ff,
+        waveStroke: 5,
+        waveRad: 60,
+        sparks: 20,
+        sparkLen: 15
+      },
+      shootEffect: {
+        type: ShootEffect,
+        lifetime: 30,
+        size: 10,
+        particles: 10,
+        colorFrom: bcd7e8,
+        colorTo: 000000
+      }
+    }
+  },
+  shootSound: artillery,
+  consumes: {
+    power: 10
+  },

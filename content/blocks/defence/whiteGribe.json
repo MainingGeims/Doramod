@@ -1,0 +1,13 @@
+{
+	"name": "whiteGribe",
+	"description": "просто грибочек",
+	"type": "Wall",
+	"buildCostMultiplier": 0.45,
+	"health": 2,
+	"size": 3,
+	"requirements": [
+        "copper/2",
+	],
+	"category": "defense",
+	"research": "constructor"
+}
