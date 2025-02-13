@@ -1,0 +1,33 @@
+{
+  "Name": "Military-Reconstructor",
+  "description": "Improves military units to the second level",
+  "type": "Reconstructor",
+  "category": "units",
+  "size": 5,
+  "constructTime": 36000,
+  "consumes": {
+    "power": 2.5,
+    "items": {
+      "items": [
+	  "copper/1500",
+      "graphite/1200",
+      "silicon/1800",
+      "metaglass/5000"
+        
+      ]
+    },
+  },
+  "upgrades": [
+    [
+      "doraOsnova",
+      "doraPlatform"
+    ]
+  ],
+  "research": "military-factory",
+  "requirements": [
+  "silicon/800",
+  "copper/700",
+  "graphite/600"
+    
+  ]
+}

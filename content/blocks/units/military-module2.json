@@ -1,0 +1,24 @@
+{
+  "Name": "military-module2",
+  "description": "with this stuff, you can do [red] Super Dora and Super King Mortar.",
+  "type": "UnitAssemblerModule",
+  "category": "units",
+  "size": 5,
+  "tier": 2,
+  "consumes": {
+    "power": 6
+  },
+  "research": {
+    "parent": "military-rebuilder",
+    "objectives": [
+      "military-reassembly"
+    ]
+  },
+  "requirements": [
+    "silicon/7000",
+    "thorium/5000",
+    "plastanium/2000",
+	"titanium/5000",
+	"surge-alloy/3000",
+  ]
+}

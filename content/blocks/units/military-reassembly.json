@@ -1,0 +1,52 @@
+{
+  "Name": "military-assembly",
+  "description": "improves bla, bla, bla, bla, you get it.",
+  "type": "UnitAssembler",
+  "category": "units",
+  "size": 5,
+  "tier": 5
+  "areaSize": 30,
+  "droneType": "assembly-drone",
+  "dronesCreated": 4,
+  "droneConstructTime": 900,
+  "consumes": {
+    "power": 3
+  },
+  "plans": [
+    {
+      "unit": "dora-noweapon",
+      "requirements": [
+        "doramod-BaseDlyaWaponDora/1",
+		"doramod-doraBase/1"
+      ],
+      "time": 36000
+    },
+	{
+	  "unit": "dora",
+	  "requirements": [
+	    "doramod-BaseDlyaWaponDora/1",
+		"doramod-doraBase/1"
+		"doramod-dora-weapon/1"
+	  ],
+	  "time": 36000
+	},
+	{
+	  "unit": "superDora",
+	  "requirements": [
+	    "doramod-BaseDlyaWaponDora/4",
+		"doramod-doraBase/4"
+		"doramod-dora-weapon/4"
+	  ],
+	  "time": 36000
+	}	
+  ],
+  "research": "military-rebuilder",
+  "requirements": [
+    "plastanium/800",
+    "coal/500",
+    "silicon/1000",
+    "thorium/500",
+    "graphite/1500",
+	"titanium/2000"
+  ]
+}

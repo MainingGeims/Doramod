@@ -1,0 +1,29 @@
+{
+  "type": "UnitFactory",
+  "name": "military-factory",
+  "breakSound": "soundBrake",
+  "description": "Produces military units",
+  "size": 5,
+  "configurable": true,
+  "fogRadius": 3,
+  "category": "units",
+  "consumes": {
+    "power": 1
+  },
+  "plans": [
+    {
+      "unit": "doraOsnova",
+      "requirements": [
+        "silicon/1000",
+        "titanium/1000"
+		"copper/1000"
+      ],
+      "time": 36000
+    },
+  ],
+  "requirements": [
+    "silicon/500",
+    "copper/400",
+    "lead/250"
+  ]
+}
