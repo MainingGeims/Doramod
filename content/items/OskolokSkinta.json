@@ -1,0 +1,11 @@
+{
+	"type": "material",
+	"name": "OskolokSkinta",
+	"color": "1b1b1c",
+	"hardness": 4,
+	"flammability": 1.2,
+	"research": {
+	"parent": "steelingot", 
+	"requirement": {"item": "steelingot","amount": 50}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"type": "material",
+	"name": "ironingot",
+	"color": "1b1b1c",
+	"research": {
+	"parent": "ironorewithimpurities", 
+	"requirement": {"item": "ironorewithimpurities","amount": 50}
+	}
+}

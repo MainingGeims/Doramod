@@ -1,0 +1,9 @@
+{
+	"type": "material",
+	"name": "steelingot",
+	"color": "1b1b1c",
+	"research": {
+	"parent": "ironingot", 
+	"requirement": {"item": "ironingot","amount": 50}
+	}
+}

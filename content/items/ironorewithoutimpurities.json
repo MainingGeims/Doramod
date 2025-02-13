@@ -1,0 +1,9 @@
+{
+	"type": "material",
+	"name": "ironorewithoutimpurities",
+	"color": "1b1b1c",
+	"research": {
+	"parent": "iron-ore-with-out-impurities-doramod", 
+	"requirement": {"item": "titanium","amount": 50}
+	}
+}
