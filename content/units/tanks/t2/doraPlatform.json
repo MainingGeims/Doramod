@@ -1,0 +1,42 @@
+{
+  "type": "tank",
+  "name": "doraPlatform",
+  "description":"the same as the base, but stronger and slower",
+  "hitSize": 60,
+  "treadPullOffset": 7,
+  "speed": 0.9,
+  "rotateSpeed": 0.9,
+  "health": 27000,
+  "crushDamage": 1.3,
+  "range": 11,
+  "armor": 55, 
+  "research": "military-reconstructor"
+  "weapons": [
+  {
+    "minShootVelocity": 0.01,
+    "alwaysShooting": true,
+    "mirror": false,
+    "rotate": true,
+    "shootX": 0,
+    "shootY": 0,
+    "x": 0,
+    "y": 0,
+    "name": "doraWalking",
+    "reload": 81,
+    "shootSound": "doraWalking",
+    "bullet": {
+    "type": "BasicBulletType",
+    "maxRange": 652,
+    "height": 0,
+    "width": 0,
+    "lifetime": 10,
+    "damage": 0,
+    "speed": 1,
+	"despawnEffect": "none",
+    "smokeEffect": "none",
+    "shootEffect": "none",
+    "hitEffect": "none",
+	},
+  }
+  ]
+ }
