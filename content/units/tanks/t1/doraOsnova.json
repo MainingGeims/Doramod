@@ -1,0 +1,42 @@
+{
+  "type": "tank",
+  "name": "doraOsnova",
+  "description":"youtube anti-blocker. No guns-can't shoot, but can be used as a battering ram or (almost) a human shield",
+  "hitSize": 60,
+  "treadPullOffset": 7,
+  "speed": 1,
+  "rotateSpeed": 1,
+  "health": 23000,
+  "crushDamage": 0.8,
+  "range": 10,
+  "armor": 52, 
+  "research": "military-factory",
+  "weapons": [
+  {
+    "minShootVelocity": 0.01,
+    "alwaysShooting": true,
+    "mirror": false,
+    "rotate": true,
+    "shootX": 0,
+    "shootY": 0,
+    "x": 0,
+    "y": 0,
+    "name": "doraWalking",
+    "reload": 81,
+    "shootSound": "doraWalking",
+    "bullet": {
+    "type": "BasicBulletType",
+    "maxRange": 652,
+    "height": 0,
+    "width": 0,
+    "lifetime": 10,
+    "damage": 0,
+    "speed": 1,
+	"despawnEffect": "none",
+    "smokeEffect": "none",
+    "shootEffect": "none",
+    "hitEffect": "none",
+	},
+  }
+  ]
+}
