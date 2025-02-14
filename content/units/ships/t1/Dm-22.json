@@ -1,0 +1,43 @@
+{ 
+  "name": "DM-22"
+  "type": "naval",
+  "armor": 25,
+  "drag": 0.17,
+  "targetAir": true,
+  "hitSize": 20,
+  "health": 100,
+  "speed": 1,
+  "accel": 2,
+  "rotateSpeed": 2,
+  "trailX": 23,
+  "trailY": -37,
+  "trailScl": 4,
+  "trailLength": 75,
+  "rotateShooting": false,
+  "weapons": [
+   {
+	 "name": "Dm-22-weapon" ,
+	 "x": 0,
+	 "y": -3.2,
+	 "reload": 100
+	 "shootY": 10,
+	 "cooldownTime": 200,
+	 "mirror": false,
+	 "rotate": true,
+	 "rotateSpeed": 2,
+	 "bullet": {
+		 "type": "BasicBulletType",
+		 "bulletWidth": 150,
+	     "bulletHeight": 150,
+		 "splashDamageRadius": 20,
+	     "splashDamage": 10,
+  	     "speed": 10,
+		 "lifetime": 20,
+		 "damage": 20,
+		 "shootY": 40,
+         "recoil": 0.1,
+   },
+   },
+   ],
+   
+}
