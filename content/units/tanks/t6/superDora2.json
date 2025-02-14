@@ -1,0 +1,58 @@
+{
+  "research": {
+    "parent": "military-reassembly"
+  },
+  "type": "tank",
+  "tier": 2,
+  "name": "[red]superDora2",
+  "description": "Just 4 times stronger than Dora",
+  "hitSize": 180,
+  "treadPullOffset": 7,
+  "speed": 0.01,
+  "rotateSpeed": 0.01,
+  "health": 600000000,
+  "crushDamage": 1500,
+  "range": 5000,
+  "armor": 64,
+  "treadRects": [
+    {
+      "x": 13,
+      "y": -38,
+      "width": 17,
+      "height": 76
+    }
+  ],
+  "singleTarget": false,
+  "omniMovement": false,
+  "faceTarget": false,
+  "weapons": [
+    {
+	  "x": 25,
+      "y": 40,
+      "name": "dora-weapon4",
+      "layerOffset": 0.001,
+      //"reload": 0,
+	  "shootY": 7,
+	  "cooldownTime": 30,
+      //"recoil": 6,
+      "rotate": true,
+      "rotateSpeed": 9999999,
+      "shootSound": "laser",
+      "mirror": false,
+      "shootCone": 1,
+	  "bullet": {
+	   "type": "HealBulletType",
+	   "speed": 20,
+	   "color": "84F491",
+	   "trailColor": "84F491",
+       "frontColor": "84F491",
+	   "healPercent": 5,
+	   "shootEffect": "shootHeal",
+	   "smokeEffect": "hitLaser",
+	   "hitEffect":	"hitLaser",
+	   "despawnEffect": "hitLaser",
+	   "collidesTeam":	"true",
+	  },
+	},
+  ]
+}
