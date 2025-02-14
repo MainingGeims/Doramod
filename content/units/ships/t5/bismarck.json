@@ -1,0 +1,340 @@
+{ 
+  "name": "bismarck"
+  "type": "naval",
+  "armor": 25,
+  "drag": 0.17,
+  "targetAir": false,
+  "hitSize": 100,
+  "health": 25000,
+  "speed": 0.5,
+  "accel": 2,
+  "rotateSpeed": 1,
+  "trailX": 23,
+  "trailY": -37,
+  "trailScl": 4,
+  "trailLength": 75,
+  "rotateShooting": true,
+  "abilities": [
+    {
+      "type": "UnitSpawnAbility",
+      "unit": "arado-ar-196",
+      "spawnTime": 600,
+      "spawnX": 0,
+      "spawnY": -50
+    }
+  ],
+  "weapons": [
+   {
+     "name": "bismarck-weapon",
+     "x": -6,
+     "y": 40,
+     "reload": 100,
+     "shootY": 40,
+     "cooldownTime": 200,
+     "minRange": 50,
+     "mirror": true,
+     "rotate": false,  
+     "alternate": false,
+	 "shootSound": "bismarckShoot",
+     "bullet": {
+         "type": "ArtilleryBulletType",
+         "width": 20,
+         "height": 20,
+         "splashDamageRadius": 300,
+         "keepVelocity": false,  
+         "splashDamage": 150,
+         "speed": 10,
+         "lifetime": 200,
+         "damage": 300,
+         "shootY": 55,
+         "recoil": 0,
+         "homingPower": 0,  
+         "angle": 90
+		 "shootEffect": {
+           "type": "MultiEffect",
+           "effects": [
+             {
+               "type": "WaveEffect",
+               "colorFrom": "ff6a00",
+               "colorTo": "ff2400",
+               "sizeFrom": 10,
+               "sizeTo": 30,
+               "strokeFrom": 5,
+               "strokeTo": 0,
+               "lightOpacity": 0.8
+             },
+             {
+               "type": "ParticleEffect",
+               "colorFrom": "ff4500",
+               "colorTo": "ff0000",
+               "particles": 20,
+               "cone": 45,
+               "sizeFrom": 5,
+               "sizeTo": 0,
+               "length": 30
+             }
+           ]
+         },
+		 "hitEffect": {
+           "type": "MultiEffect",
+           "effects": [
+             {
+               "type": "WaveEffect",
+               "colorFrom": "ff8c00",
+               "colorTo": "ff0000",
+               "sizeFrom": 15,
+               "sizeTo": 60,
+               "strokeFrom": 6,
+               "strokeTo": 0,
+               "lightOpacity": 1.0
+             },
+             {
+               "type": "ParticleEffect",
+               "colorFrom": "ff0000",
+               "colorTo": "8b0000",
+               "particles": 40,
+               "cone": 360,
+               "sizeFrom": 8,
+               "sizeTo": 2,
+               "length": 50
+             }
+           ]
+         },
+		 "trailEffect": {
+           "type": "ParticleEffect",
+           "colorFrom": "ff4500",
+           "colorTo": "8b0000",
+           "particles": 10,
+           "cone": 10,
+           "sizeFrom": 6,
+           "sizeTo": 2,
+           "length": 15
+         },
+		 "despawnEffect": {
+           "type": "MultiEffect",
+           "effects": [
+             {
+               "type": "ParticleEffect",
+               "colorFrom": "ff4500",
+               "colorTo": "ff0000",
+               "particles": 15,
+               "cone": 180,
+               "sizeFrom": 4,
+               "sizeTo": 1,
+               "length": 20
+             },
+             {
+               "type": "WaveEffect",
+               "colorFrom": "ff8c00",
+               "colorTo": "ff0000",
+               "sizeFrom": 10,
+               "sizeTo": 30,
+               "strokeFrom": 3,
+               "strokeTo": 0,
+               "lightOpacity": 0.7
+             }
+           ]
+         }
+    }
+   },
+   {
+   "name": "bismarck-weapon-zenitka",
+   "x": -27,
+   "y": 13,
+   "mirror": true,
+   "rotate": true,  
+   "shootCone": 360,  
+   "targetAir": true,   
+   "targetGround": false,  
+   "targetTiles": false,
+   "collidesTiles": false,
+   "collidesGround": false,
+   "shootSound": "bismarckShoot-zenitka",  
+   "reload": 30,  
+   "bullet": {
+      "type": "BasicBulletType",
+	  "collidesTiles": false,
+	  "targetTiles": false,
+	  "targetGround": false,
+	  "collidesGround": false,
+      "hitEffect": {
+         "type": "ExplosionEffect",
+         "colorFrom": "ff8800",
+         "colorTo": "ff2200",
+         "sizeFrom": 20,
+         "sizeTo": 50,
+         "lightOpacity": 1
+      },
+      "shootEffect": {
+         "type": "MultiEffect",
+         "effects": [
+            {
+               "type": "WaveEffect",
+               "colorFrom": "ff8800",
+               "colorTo": "ff2200",
+               "sizeFrom": 10,
+               "sizeTo": 25,
+               "strokeFrom": 4,
+               "strokeTo": 0
+            },
+            {
+               "type": "ParticleEffect",
+               "colorFrom": "ff5500",
+               "colorTo": "ff2200",
+               "particles": 15,
+               "cone": 20,
+               "sizeFrom": 4,
+               "sizeTo": 1,
+               "length": 20
+            }
+         ]
+      },
+      "trailEffect": {
+         "type": "ParticleEffect",
+         "colorFrom": "ff5500",
+         "colorTo": "7d1b00",
+         "particles": 10,
+         "cone": 10,
+         "sizeFrom": 5,
+         "sizeTo": 2,
+         "length": 15
+      },
+      "despawnEffect": {
+         "type": "MultiEffect",
+         "effects": [
+            {
+               "type": "ParticleEffect",
+               "colorFrom": "ff4400",
+               "colorTo": "ff1100",
+               "particles": 12,
+               "cone": 180,
+               "sizeFrom": 5,
+               "sizeTo": 2,
+               "length": 20
+            },
+            {
+               "type": "WaveEffect",
+               "colorFrom": "ff7700",
+               "colorTo": "ff2200",
+               "sizeFrom": 10,
+               "sizeTo": 30,
+               "strokeFrom": 3,
+               "strokeTo": 0
+            }
+         ]
+      },
+      "lifetime": 30,
+      "sprite": "shell",
+      "speed": 50,
+      "damage": 50,
+      "width": 14,
+      "height": 14,
+      "collides": true,
+      "collidesTiles": false,
+      "backColor": "ff5500",
+      "frontColor": "ff2200"
+     }
+    },
+	{
+   "name": "bismarck-weapon-zenitka",
+   "x": -27,
+   "y": -13,
+   "mirror": true,
+   "rotate": true,  
+   "shootCone": 360,  
+   "targetAir": true,   
+   "targetGround": false,  
+   "targetTiles": false,
+   "collidesTiles": false,
+   "collidesGround": false,
+   "shootSound": "bismarckShoot-zenitka",  
+   "reload": 30,  
+   "bullet": {
+      "type": "BasicBulletType",
+	  "collidesTiles": false,
+	  "targetTiles": false,
+	  "targetGround": false,
+	  "collidesGround": false,
+      "hitEffect": {
+         "type": "ExplosionEffect",
+         "colorFrom": "ff8800",
+         "colorTo": "ff2200",
+         "sizeFrom": 20,
+         "sizeTo": 50,
+         "lightOpacity": 1
+      },
+      "shootEffect": {
+         "type": "MultiEffect",
+         "effects": [
+            {
+               "type": "WaveEffect",
+               "colorFrom": "ff8800",
+               "colorTo": "ff2200",
+               "sizeFrom": 10,
+               "sizeTo": 25,
+               "strokeFrom": 4,
+               "strokeTo": 0
+            },
+            {
+               "type": "ParticleEffect",
+               "colorFrom": "ff5500",
+               "colorTo": "ff2200",
+               "particles": 15,
+               "cone": 20,
+               "sizeFrom": 4,
+               "sizeTo": 1,
+               "length": 20
+            }
+         ]
+      },
+      "trailEffect": {
+         "type": "ParticleEffect",
+         "colorFrom": "ff5500",
+         "colorTo": "7d1b00",
+         "particles": 10,
+         "cone": 10,
+         "sizeFrom": 5,
+         "sizeTo": 2,
+         "length": 15
+      },
+      "despawnEffect": {
+         "type": "MultiEffect",
+         "effects": [
+            {
+               "type": "ParticleEffect",
+               "colorFrom": "ff4400",
+               "colorTo": "ff1100",
+               "particles": 12,
+               "cone": 180,
+               "sizeFrom": 5,
+               "sizeTo": 2,
+               "length": 20
+            },
+            {
+               "type": "WaveEffect",
+               "colorFrom": "ff7700",
+               "colorTo": "ff2200",
+               "sizeFrom": 10,
+               "sizeTo": 30,
+               "strokeFrom": 3,
+               "strokeTo": 0
+            }
+         ]
+      },
+      "lifetime": 30,
+      "sprite": "shell",
+      "speed": 50,
+      "damage": 50,
+      "width": 14,
+      "height": 14,
+      "collides": true,
+      "collidesTiles": false,
+      "backColor": "ff5500",
+      "frontColor": "ff2200"
+     }
+}
+   
+  ]
+   
+   
+}
