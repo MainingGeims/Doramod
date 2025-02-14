@@ -1,0 +1,42 @@
+{
+  "type": "tank",
+  "name": "dora-noweapon",
+  "description":"Almost Dora, but without guns",
+  "hitSize": 60,
+  "treadPullOffset": 7,
+  "speed": 0.5,
+  "rotateSpeed": 0.5,
+  "health": 40000,
+  "crushDamage": 2,
+  "range": 11,
+  "armor": 60, 
+  "research": "military-rebuilder"
+  "weapons": [
+  {
+    "minShootVelocity": 0.01,
+    "alwaysShooting": true,
+    "mirror": false,
+    "rotate": true,
+    "shootX": 0,
+    "shootY": 0,
+    "x": 0,
+    "y": 0,
+    "name": "doraWalking",
+    "reload": 81,
+    "shootSound": "doraWalking",
+    "bullet": {
+    "type": "BasicBulletType",
+    "maxRange": 652,
+    "height": 0,
+    "width": 0,
+    "lifetime": 10,
+    "damage": 0,
+    "speed": 1,
+	"despawnEffect": "none",
+    "smokeEffect": "none",
+    "shootEffect": "none",
+    "hitEffect": "none",
+	},
+  }
+  ]
+ }
