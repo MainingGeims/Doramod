@@ -1,0 +1,127 @@
+{
+  "type": "flying",
+  "name": "arado-ar-196",
+  "description": "German single-engine military reconnaissance seaplane from World War II.",
+  "flying": true,
+  "health": 1600,
+  "speed": 2.65,
+  "rotateSpeed": 1.8,
+  "hitSize": 14,
+  "itemCapacity": 15,
+  "armor": 6,
+  "targetAir": true,
+  "targetGround": true,
+  "weapons": [
+    {
+      "name": "mg-ff-wing-cannon",
+      "x": 8,
+      "y": 0,
+      "mirror": true,
+      "rotate": true,
+      "reload": 30,
+      "shootSound": "mg-ff-wing-cannon",
+      "bullet": {
+        "type": "BasicBulletType",
+        "speed": 8,
+        "damage": 40,
+        "width": 8,
+        "height": 8,
+        //"hitEffect": "flakExplosion",
+        "shootEffect": {
+          "type": "WaveEffect",
+          "lifetime": 15,
+          "sizeFrom": 0,
+          "sizeTo": 10,
+          "strokeFrom": 2,
+          "strokeTo": 0,
+          "colorFrom": "ff9900",
+          "colorTo": "ff3300"
+        },
+        "trailColor": "ff6600",
+        "trailLength": 8,
+        "trailWidth": 3
+      }
+    },
+    {
+      "name": "mg-17-machine-gun",
+      "x": 2,
+      "y": 4,
+      "mirror": false,
+      "rotate": false,
+      "reload": 15,
+      "shootSound": "mg-17-machine-gun",
+      "bullet": {
+        "type": "BasicBulletType",
+        "speed": 10,
+        "damage": 12,
+        "width": 6,
+        "height": 6,
+        //"hitEffect": "bulletHit",
+        "trailColor": "ffaa00",
+        "trailLength": 6,
+        "trailWidth": 2
+      }
+    },
+    {
+      "name": "mg-15-turret",
+      "x": 0,
+      "y": -4,
+      "mirror": false,
+      "rotate": true,
+      "reload": 20,
+      "shootSound": "mg-17-machine-gun",
+      "bullet": {
+        "type": "BasicBulletType",
+        "speed": 9,
+        "damage": 10,
+        "width": 5,
+        "height": 5,
+        //"hitEffect": "bulletHit",
+        "trailColor": "ffee00",
+        "trailLength": 6,
+        "trailWidth": 2
+      }
+    },
+    {
+      "name": "bombs",
+      "x": 0,
+      "y": 2,
+      "mirror": true,
+      "rotate": false,
+      "reload": 240,
+      "shootSound": "bombDrop",
+      "bullet": {
+        "type": "BombBulletType",
+        "speed": 1,
+        "damage": 200,
+        "splashDamage": 250,
+        "splashDamageRadius": 50,
+        "width": 10,
+        "height": 15,
+        "lifetime": 100,
+        //"hitEffect": "bombExplosion",
+        "trailColor": "ff3300",
+        "trailLength": 8,
+        "trailWidth": 4
+    },
+    }
+    ],
+	"abilities": [
+    {
+      "type": "MoveEffectAbility",
+      "effect": {
+        "type": "ParticleEffect",
+        "particles": 10,
+        "sizeFrom": 4,
+        "sizeTo": 1,
+        "length": 50,
+        "lifetime": 20,
+        "colorFrom": "ff8800",
+        "colorTo": "ff2200"
+      },
+      "interval": 5,
+      "y": -6
+    }
+  ],
+  "research": "flare"
+}
