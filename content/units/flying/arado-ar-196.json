@@ -5,7 +5,7 @@
   "flying": true,
   "health": 160,
   "speed": 2.65,
-  "rotateSpeed": 3,
+  "rotateSpeed": 6,
   "hitSize": 12,
   "itemCapacity": 10,
   "armor": 6,
@@ -88,7 +88,8 @@
       "y": 2,
       "mirror": true,
       "rotate": false,
-      "reload": 20,
+      "reload": 40,
+      "alternate": true
       "shootSound": "bombDrop",
       "bullet": {
         "type": "BombBulletType",
