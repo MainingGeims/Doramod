@@ -100,6 +100,9 @@
              }
            ]
          },
+		 "trailSinScl": 2.4,
+		 "trailSinMag": 1.2,
+		 "trailChance": 0.3,
 		 "trailEffect": {
            "type": "ParticleEffect",
            "colorFrom": "ff4500",
@@ -189,6 +192,9 @@
             }
          ]
       },
+	  "trailSinScl": 2.4,
+	  "trailSinMag": 1.2,
+	  "trailChance": 0.3,
       "trailEffect": {
          "type": "ParticleEffect",
          "colorFrom": "ff5500",
@@ -287,6 +293,9 @@
             }
          ]
       },
+	  "trailSinScl": 2.4,
+	  "trailSinMag": 1.2,
+	  "trailChance": 0.3,
       "trailEffect": {
          "type": "ParticleEffect",
          "colorFrom": "ff5500",
