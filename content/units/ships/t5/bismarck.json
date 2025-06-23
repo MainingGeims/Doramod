@@ -17,7 +17,7 @@
   "abilities": [
     {
       "type": "UnitSpawnAbility",
-      "unit": "arado-ar-196",
+      "unit": "aradoar196",
       "spawnTime": 600,
       "spawnX": 0,
       "spawnY": -50
