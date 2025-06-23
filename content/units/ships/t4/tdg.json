@@ -1,0 +1,410 @@
+{
+  "type": "naval",
+  "name": "hms-prince-of-wales",
+  "description": "Flagship Queen Elizabeth-class aircraft carrier of the Royal Navy, operating STOVL aircraft and helicopters.",
+  "research": {
+    "parent": "queen-elizabeth-class",
+    "requirements": [
+      "graphite/500",
+      "surge-alloy/300",
+      "plastanium/200",
+      "phase-fabric/150",
+      "copper/400",
+      "lead/400",
+      "silicon/600"
+    ]
+  },
+  "health": 8000,
+  "armor": 15,
+  "drag": 0.17,
+  "speed": 0.56,
+  "accel": 0.18,
+  "rotateSpeed": 0.8,
+  "hitSize": 44,
+  "targetAir": true,
+  "range": 300,
+
+  "lightRadius": 180,
+  "outlineColor": "3366CCFF",
+  "lightOpacity": 0.2,
+
+  "parts": [
+    {
+      "type": "shapePart",
+      "y": 0,
+      "circle": true,
+      "layer": 100,
+      "color": "3366CC66",
+      "radius": 50,
+      "radiusTo": 60,
+      "stroke": 8,
+      "strokeTo": 2
+    },
+    {
+      "type": "HaloPart",
+      "y": 0,
+      "tri": true,
+      "layer": 100,
+      "color": "3366CC88",
+      "haloRotateSpeed": 1.2,
+      "haloRadius": 70,
+      "haloRadiusTo": 80,
+      "stroke": 12,
+      "strokeTo": 4,
+      "shapes": 3,
+      "triLength": 20,
+      "triLengthTo": 30
+    }
+  ],
+
+  "trailX": 27,
+  "trailY": -43,
+  "trailScl": 4,
+  "trailLength": 95,
+  "rotateShooting": false,
+
+  "weapons": [
+    {
+      "name": "phalanx-ciws",
+      "x": 20,
+      "y": 10,
+      "mirror": true,
+      "rotate": true,
+      "alternate": true,
+      "reload": 10,
+      "inaccuracy": 4,
+      "shootY": 8,
+      "shootSound": "laser",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 15,
+        "speed": 12,
+        "lifetime": 30,
+        "width": 6,
+        "height": 6,
+        "pierce": true,
+        "pierceBuilding": true,
+        "splashDamage": 5,
+        "splashDamageRadius": 10,
+		"shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "colorFrom": "FFEEFF",
+            "colorTo": "CC99FF",
+            "sizeFrom": 5,
+            "sizeTo": 20,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "lightOpacity": 0.6
+          },
+          {
+            "type": "ParticleEffect",
+            "colorFrom": "FFFFFF",
+            "colorTo": "FFCC66",
+            "particles": 8,
+            "cone": 30,
+            "sizeFrom": 4,
+            "sizeTo": 1,
+            "length": 15
+          }
+        ]
+      },
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 12,
+            "line": true,
+            "length": 25,
+            "lifetime": 20,
+            "colorFrom": "66CCFF",
+            "colorTo": "2266FF"
+          },
+          {
+            "type": "WaveEffect",
+            "colorFrom": "66CCFF",
+            "colorTo": "0033FF",
+            "sizeFrom": 10,
+            "sizeTo": 40,
+            "strokeFrom": 5,
+            "strokeTo": 0,
+            "lightOpacity": 0.8
+          }
+        ]
+      },
+	  "trailSinScl": 2.4,
+	  "trailSinMag": 1.2,
+	  "trailChance": 0.3,
+      "trailEffect": {
+        "type": "ParticleEffect",
+        "particles": 6,
+        "cone": 10,
+        "sizeFrom": 3,
+        "sizeTo": 1,
+        "length": 10,
+        "colorFrom": "FFCC66",
+        "colorTo": "FF9933"
+      },
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 10,
+            "cone": 180,
+            "sizeFrom": 3,
+            "sizeTo": 1,
+            "length": 20,
+            "colorFrom": "FFFFFF",
+            "colorTo": "CCCCCC"
+          },
+          {
+            "type": "WaveEffect",
+            "colorFrom": "CC99FF",
+            "colorTo": "6633FF",
+            "sizeFrom": 15,
+            "sizeTo": 30,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "lightOpacity": 0.5
+          }
+        ]
+      },
+      }
+    },
+    {
+      "name": "ds30m-mk2",
+      "x": -20,
+      "y": 10,
+      "mirror": true,
+      "rotate": true,
+      "alternate": true,
+      "reload": 30,
+      "inaccuracy": 6,
+      "shootY": 8,
+      "shootSound": "cannon",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 40,
+        "speed": 9,
+        "lifetime": 40,
+        "width": 10,
+        "height": 10,
+        "splashDamage": 20,
+        "splashDamageRadius": 15,
+		      "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "colorFrom": "99FFFF",
+            "colorTo": "33CCCC",
+            "sizeFrom": 0,
+            "sizeTo": 30,
+            "strokeFrom": 6,
+            "strokeTo": 0,
+            "lightOpacity": 0.7
+          },
+          {
+            "type": "ParticleEffect",
+            "colorFrom": "66CCFF",
+            "colorTo": "3388FF",
+            "particles": 12,
+            "cone": 45,
+            "sizeFrom": 6,
+            "sizeTo": 2,
+            "length": 25
+          }
+        ]
+      },
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "line": true,
+            "length": 35,
+            "lifetime": 30,
+            "colorFrom": "FF6666",
+            "colorTo": "FF0000"
+          },
+          {
+            "type": "WaveEffect",
+            "colorFrom": "FF6666",
+            "colorTo": "CC0000",
+            "sizeFrom": 20,
+            "sizeTo": 50,
+            "strokeFrom": 6,
+            "strokeTo": 0,
+            "lightOpacity": 1.0
+          }
+        ]
+      },
+	  "trailSinScl": 2.4,
+	  "trailSinMag": 1.2,
+	  "trailChance": 0.3,
+      "trailEffect": {
+        "type": "ParticleEffect",
+        "particles": 8,
+        "cone": 15,
+        "sizeFrom": 5,
+        "sizeTo": 2,
+        "length": 12,
+        "colorFrom": "66CCFF",
+        "colorTo": "3399FF"
+      },
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 12,
+            "cone": 180,
+            "sizeFrom": 4,
+            "sizeTo": 1,
+            "length": 20,
+            "colorFrom": "FFCCCC",
+            "colorTo": "FF6666"
+          },
+          {
+            "type": "WaveEffect",
+            "colorFrom": "FFCCCC",
+            "colorTo": "FF4444",
+            "sizeFrom": 10,
+            "sizeTo": 25,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "lightOpacity": 0.6
+          }
+        ]
+      },
+      }
+    },
+    {
+      "name": "browning-50cal",
+      "x": 0,
+      "y": -5,
+      "mirror": true,
+      "rotate": true,
+      "alternate": true,
+      "reload": 5,
+      "inaccuracy": 8,
+      "shootY": 5,
+      "shootSound": "machinegun",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 8,
+        "speed": 14,
+        "lifetime": 25,
+        "width": 5,
+        "height": 5,
+        "splashDamage": 0,
+		"shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "colorFrom": "FFFFFF",
+            "colorTo": "AAAAAA",
+            "sizeFrom": 2,
+            "sizeTo": 10,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lightOpacity": 0.4
+          },
+          {
+            "type": "ParticleEffect",
+            "colorFrom": "DDDDDD",
+            "colorTo": "888888",
+            "particles": 6,
+            "cone": 20,
+            "sizeFrom": 2,
+            "sizeTo": 0,
+            "length": 10
+          }
+        ]
+      },
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "particles": 4,
+        "lifetime": 15,
+        "colorFrom": "BBBBBB",
+        "colorTo": "666666"
+      },
+	  "trailSinScl": 2.4,
+	  "trailSinMag": 1.2,
+	  "trailChance": 0.3,
+      "trailEffect": {
+        "type": "ParticleEffect",
+        "particles": 4,
+        "cone": 10,
+        "sizeFrom": 2,
+        "sizeTo": 1,
+        "length": 8,
+        "colorFrom": "CCCCCC",
+        "colorTo": "999999"
+      },
+      "despawnEffect": {
+        "type": "WaveEffect",
+        "colorFrom": "CCCCCC",
+        "colorTo": "999999",
+        "sizeFrom": 8,
+        "sizeTo": 20,
+        "strokeFrom": 3,
+        "strokeTo": 0,
+        "lightOpacity": 0.3
+      },
+      }
+    }
+  ],
+
+  "abilities": [
+    {
+      "type": "MoveEffectAbility",
+      "effect": {
+        "type": "ParticleEffect",
+        "particles": 10,
+        "sizeFrom": 2,
+        "sizeTo": 0.5,
+        "length": 25,
+        "lifetime": 20,
+        "colorFrom": "ff8800",
+        "colorTo": "ff2200"
+      },
+      "interval": 5,
+      "y": -6
+    },
+    //{
+      //"type": "UnitSpawnAbility",
+      //"unit": "f35b-lightning",
+      //"spawnX": -30,
+      //"spawnY": -50,
+      //"spawnTime": 600
+    //},
+    //{
+      //"type": "UnitSpawnAbility",
+      //"unit": "f35b-lightning",
+      //"spawnX": 30,
+      //"spawnY": -50,
+      //"spawnTime": 600
+    //},
+    //{
+      //"type": "UnitSpawnAbility",
+      //"unit": "merlin-hm2",
+      //"spawnX": -15,
+      //"spawnY": -55,
+      //"spawnTime": 450
+    //},
+    //{
+      //"type": "UnitSpawnAbility",
+      //"unit": "chinook-ch47",
+      //"spawnX": 15,
+      //"spawnY": -55,
+      //"spawnTime": 450
+    //}
+  ]
+}
